@@ -32,7 +32,7 @@ const Products: React.FC = () => {
             <tbody>
                 {data?.products.map(product => {
                     return (
-                        <tr>
+                        <tr key={product.id}>
                             <td className="px-6 py-4">
                                 <Link className="underline underline-offset-2 text-blue-400" href={`/products/${product.id}`}>
                                     {product.title}
